@@ -16,15 +16,38 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    height:50px;
-    line-height:50px;
 }
 
 .navbar-item{
     display: inline-block;
-    margin:0 .25em;
+    margin: 0 .25em;
+    padding: 0;
+}
+
+.navbar-item a{
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.narvar-item a:hover{
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 header{
     clear: both;
+}
+
+@media (min-width: 780px){
+    .navbar > .logo{
+        display: block;
+        float: left;
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+
+    .navbar > .navbar-list{
+        float: right;
+    }
 }
