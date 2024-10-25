@@ -1,5 +1,21 @@
+.bg-menu{
+    width: 70px;
+    height: 70px;
+}
+
+.bgm-checkbox{
+    display: none;
+}
+
+.list-icon{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+}
+
 .navbar{
     position: fixed;
+    
     top: 0;
     left: 0;
     right:0;
@@ -12,14 +28,29 @@
 }
 
 .navbar-list{
+    position: absolute;
+    justify-content: left;
+    align-items: flex-start;
     list-style: none;
-    text-align: center;
+    text-align: left;
     padding: 0;
     margin: 0;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    
+}
+
+.bgm-checkbox:checked + .navbar-list{
+    opacity: 1;
+    visibility: visible;
+    background-color: var(--dark-color);
 }
 
 .navbar-item{
-    display: inline-block;
+    display: block;
     margin: 0 .25em;
     padding: 0;
 }
@@ -44,10 +75,47 @@ header{
         display: block;
         float: left;
         font-size: 1.5rem;
-        line-height: 3.5rem;
+        line-height: 4rem;
+        margin-left: 1rem;
+        
     }
 
     .navbar > .navbar-list{
         float: right;
+        padding-right: 0;
+    }
+
+    .burguer-menu{
+        display: block;
+    }
+
+    .bg-menu{
+        display: none;
+    }
+
+    /*REVISAR*/
+    .navbar-list{
+        position: relative;
+        visibility:visible;
+        display: inline-block;
+        list-style: none;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: none;
+        background-color: var(--dark-color);
+    }
+    
+    .navbar-item{
+        display: inline-block;
+        margin: 0 .25em;
+        padding: 0;
+    }
+    
+    .navbar-item a{
+        display: block;
+        padding: 1rem;
+        font-weight: bold;
     }
 }

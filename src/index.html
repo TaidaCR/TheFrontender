@@ -16,8 +16,19 @@
     <link rel="stylesheet" href="./css/footer.css">
   </head>
 <body>
-    <nav class="navbar">
+    <div class="burguer-menu">
+    
+    
+      <nav class="navbar">
         <div class="logo">The Front<span>ender</span></div>
+        
+        
+        <label for="burguer-menu" class="bg-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </label>
+        <input type="checkbox" class="bgm-checkbox" name="" id="burguer-menu">
         <ul class="navbar-list">
             <li class="navbar-item">
               <a href="#el-juego">El juego</a>
@@ -35,7 +46,14 @@
               <a href="#dirty-coders">Dirty Coders</a>
             </li>
         </ul>
+      
+   
+   
     </nav>
+
+
+    
+  </div>
     <header class="header">
       <div class="header-overlay"></div>
       <div class="header-content">
@@ -118,7 +136,7 @@
               <input
                 type="text"
                 name="nombre"
-                id="ombre"
+                id="nombre"
                 placeholder="Quién eres"
               />
             </p>
