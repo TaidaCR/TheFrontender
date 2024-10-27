@@ -1,5 +1,6 @@
 *{
     font-family: 'Cairo', Arial, Helvetica, sans-serif;
+
 }
 
 body{
@@ -36,6 +37,10 @@ img{
 
 .xl{
     font-size: 1.5rem;
+}
+
+#el-juego{
+    text-align: justify;
 }
 
 @media(min-width: 480px){

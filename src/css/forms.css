@@ -79,12 +79,11 @@ button{
 
     position: absolute;
     top: 0;
-    left: 0;
+    left: -23px;
 }
 
 .checkbox label::after{
     /*crear la marca*/
-
     content:"";
     display:inline-block;
     height: 6px;
@@ -96,24 +95,19 @@ button{
     /*encima del recuadro*/
     position: absolute;
     top: 3px;
-    left:4px;
+    left:-20px;
 }
 
 .checkbox label{
     position: absolute;
     top:0;
-    left:0;
+    left:20px;
     padding-left: calc(var(--font-size)+ 5rem);
     line-height: var(--font-size);
 }
 
 /*Esto añade interactividad al checkbox*/
 
-.checkbox input[type="checkbox"] + label::after{
-   
+.checkbox input[type="checkbox"]:checked + label::after{
     content: none;
-}
-
-.checkbox input [type="checkbox"]:checked + label::after{
-    content:"";
 }

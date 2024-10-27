@@ -2,7 +2,6 @@
     height: 100vh;
     /*le pone margen a todo el header*/
     padding: 50px;
-
     background: url('../img/bg.jpg') bottom center no-repeat;
     background-size: cover;
     position: relative;
@@ -44,9 +43,25 @@
 }
 
 .header-content .promo-text{
-    margin: 40% 2rem 2rem 2rem;
-    background-color: rgba(255,255,255,.25);
+    /* margin: 40% 0rem 2rem 0rem; */
+    width: 262px;
+    margin-top: 12%;
+    background-color: rgba(255, 255, 255, 0.202);
     padding: 2rem;
     text-shadow: black 1px 1px;
+    text-align: justify;
 }
+
+@media (min-width: 780px){
+    .header-content .promo-text{
+        width:auto;
+        margin: 20% 2rem 2rem 2rem;
+        background-color: rgba(255,255,255,.25);
+        padding: 2rem;
+        text-shadow: black 1px 1px;
+    }
+
+}
+
+
 

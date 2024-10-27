@@ -15,7 +15,6 @@
 
 .navbar{
     position: fixed;
-    
     top: 0;
     left: 0;
     right:0;
@@ -32,20 +31,21 @@
     justify-content: left;
     align-items: flex-start;
     list-style: none;
+    display: none;
     text-align: left;
     padding: 0;
     margin: 0;
     flex-direction: column;
     background-color: var(--dark-color);
-    opacity: 0;
+    /* opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    
+    transition: opacity 0.5s ease, visibility 0.5s ease; */
 }
 
 .bgm-checkbox:checked + .navbar-list{
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1;
+    visibility: visible; */
+    display: inline-block;
     background-color: var(--dark-color);
 }
 
@@ -61,7 +61,7 @@
     font-weight: bold;
 }
 
-.narvar-item a:hover{
+.navbar-item a:hover{
     background-color: var(--primary-color);
     color: var(--light-color);
 }
@@ -93,18 +93,12 @@ header{
         display: none;
     }
 
-    /*REVISAR*/
     .navbar-list{
-        position: relative;
-        visibility:visible;
-        display: inline-block;
-        list-style: none;
         justify-content: flex-end;
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        transition: none;
-        background-color: var(--dark-color);
+        position: relative;
+        display: inline;
+        /* visibility:visible;
+        opacity: 1; */
     }
     
     .navbar-item{
@@ -114,7 +108,6 @@ header{
     }
     
     .navbar-item a{
-        display: block;
         padding: 1rem;
         font-weight: bold;
     }
